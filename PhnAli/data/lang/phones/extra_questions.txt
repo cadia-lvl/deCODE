@@ -1,0 +1,9 @@
+a_B ai_B aiː_B au_B auː_B aː_B c_B cʰ_B ei_B eiː_B f_B h_B i_B iː_B j_B k_B kʰ_B l_B l̥_B m_B m̥_B n_B n̥_B ou_B ouː_B p_B pʰ_B r_B r̥_B s_B t_B tʰ_B u_B uː_B v_B x_B ç_B ð_B ŋ_B ŋ̊_B œ_B œy_B œyː_B œː_B ɔ_B ɔi_B ɔː_B ɛ_B ɛː_B ɣ_B ɪ_B ɪː_B ɲ_B ɲ̊_B ʏ_B ʏi_B ʏː_B θ_B 
+a_E ai_E aiː_E au_E auː_E aː_E c_E cʰ_E ei_E eiː_E f_E h_E i_E iː_E j_E k_E kʰ_E l_E l̥_E m_E m̥_E n_E n̥_E ou_E ouː_E p_E pʰ_E r_E r̥_E s_E t_E tʰ_E u_E uː_E v_E x_E ç_E ð_E ŋ_E ŋ̊_E œ_E œy_E œyː_E œː_E ɔ_E ɔi_E ɔː_E ɛ_E ɛː_E ɣ_E ɪ_E ɪː_E ɲ_E ɲ̊_E ʏ_E ʏi_E ʏː_E θ_E 
+a_I ai_I aiː_I au_I auː_I aː_I c_I cʰ_I ei_I eiː_I f_I h_I i_I iː_I j_I k_I kʰ_I l_I l̥_I m_I m̥_I n_I n̥_I ou_I ouː_I p_I pʰ_I r_I r̥_I s_I t_I tʰ_I u_I uː_I v_I x_I ç_I ð_I ŋ_I ŋ̊_I œ_I œy_I œyː_I œː_I ɔ_I ɔi_I ɔː_I ɛ_I ɛː_I ɣ_I ɪ_I ɪː_I ɲ_I ɲ̊_I ʏ_I ʏi_I ʏː_I θ_I 
+a_S ai_S aiː_S au_S auː_S aː_S c_S cʰ_S ei_S eiː_S f_S h_S i_S iː_S j_S k_S kʰ_S l_S l̥_S m_S m̥_S n_S n̥_S ou_S ouː_S p_S pʰ_S r_S r̥_S s_S t_S tʰ_S u_S uː_S v_S x_S ç_S ð_S ŋ_S ŋ̊_S œ_S œy_S œyː_S œː_S ɔ_S ɔi_S ɔː_S ɛ_S ɛː_S ɣ_S ɪ_S ɪː_S ɲ_S ɲ̊_S ʏ_S ʏi_S ʏː_S θ_S 
+sil oov 
+sil_B oov_B 
+sil_E oov_E 
+sil_I oov_I 
+sil_S oov_S 

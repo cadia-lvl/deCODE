@@ -1,0 +1,10 @@
+sil
+sil_B
+sil_E
+sil_I
+sil_S
+oov
+oov_B
+oov_E
+oov_I
+oov_S

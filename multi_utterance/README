@@ -1,0 +1,5 @@
+To run the vowel-space postprocessor, use the Octave script 'run_command.m' in a Unix shell.  For example, to postprocess all the single-utterance results stored in the file 'all_results' and write the outcome to the file 'vowel_space', type:
+./run_command.m measure_derivative_parameters1 --in all_results --out vowel_space
+To see a list of command-line options for the main Octave function 'measure_derivative_parameters1.m', use the 'help' command, i.e., type:
+./run_command.m help measure_derivative_parameters1
+Before running the script 'run_command.m', you need to first make it executable with 'chmod u+x'.

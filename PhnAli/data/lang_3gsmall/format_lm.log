@@ -1,0 +1,54 @@
+# Running on terra
+# Started at Fri Oct 6 12:35:33 GMT 2017
+# SLURMD_NODENAME=terra
+# SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+# SLURM_CLUSTER_NAME=terracluster
+# SLURM_CPUS_ON_NODE=1
+# SLURM_EXPORT_ENV=PATH
+# SLURM_GET_USER_ENV=1
+# SLURM_GTIDS=0
+# SLURM_JOBID=615132
+# SLURM_JOB_ACCOUNT=staff
+# SLURM_JOB_CPUS_PER_NODE=1
+# SLURM_JOB_ID=615132
+# SLURM_JOB_NAME=format_lm.sh
+# SLURM_JOB_NODELIST=terra
+# SLURM_JOB_NUM_NODES=1
+# SLURM_JOB_PARTITION=shared
+# SLURM_JOB_QOS=normal
+# SLURM_JOB_UID=1004
+# SLURM_JOB_USER=inga
+# SLURM_LOCALID=0
+# SLURM_MEM_PER_CPU=1024
+# SLURM_NNODES=1
+# SLURM_NODEID=0
+# SLURM_NODELIST=terra
+# SLURM_NODE_ALIASES='(null)'
+# SLURM_NPROCS=1
+# SLURM_NTASKS=1
+# SLURM_NTASKS_PER_NODE=1
+# SLURM_OPEN_MODE=a
+# SLURM_PRIO_PROCESS=0
+# SLURM_PROCID=0
+# SLURM_SUBMIT_DIR=/home/staff/inga/kaldi/egs/althingi/s5
+# SLURM_SUBMIT_HOST=terra
+# SLURM_TASKS_PER_NODE=1
+# SLURM_TASK_PID=24635
+# SLURM_TOPOLOGY_ADDR=terra
+# SLURM_TOPOLOGY_ADDR_PATTERN=node
+# utils/format_lm.sh data/Mlang data/Mlang_3gsmall/kenlm_3g.arpa.gz data/local/Mdict/lexicon.txt data/Mlang_3gsmall 
+CUDA_VISIBLE_DEVICES set to NoDevFiles, unsetting it...
+Converting 'data/Mlang_3gsmall/kenlm_3g.arpa.gz' to FST
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/Mlang_3gsmall/words.txt - data/Mlang_3gsmall/G.fst 
+LOG (arpa2fst[5.2.153~1-16e86]:Read():arpa-file-parser.cc:96) Reading \data\ section.
+LOG (arpa2fst[5.2.153~1-16e86]:Read():arpa-file-parser.cc:151) Reading \1-grams: section.
+LOG (arpa2fst[5.2.153~1-16e86]:Read():arpa-file-parser.cc:151) Reading \2-grams: section.
+LOG (arpa2fst[5.2.153~1-16e86]:Read():arpa-file-parser.cc:151) Reading \3-grams: section.
+LOG (arpa2fst[5.2.153~1-16e86]:RemoveRedundantStates():arpa-lm-compiler.cc:355) Reduced num-states from 650189 to 645237
+fstisstochastic data/Mlang_3gsmall/G.fst 
+-2.34693e-07 -0.648299
+Succeeded in formatting LM: 'data/Mlang_3gsmall/kenlm_3g.arpa.gz'
+# Accounting: begin_time=1507293333
+# Accounting: end_time=
+# Accounting: time=-1507293333 threads=1
+# Finished at Fri Oct 6 12:35:55 GMT 2017 with status 0

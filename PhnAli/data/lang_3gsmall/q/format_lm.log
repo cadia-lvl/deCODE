@@ -1,0 +1,2 @@
+Submitted batch job 615132
+/var/lib/slurm/slurmd/job615132/slurm_script: line 14: unset: `CUDA_VISIBLE_DEVICES.': not a valid identifier
