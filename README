@@ -1,0 +1,43 @@
+\Environment:
+
+The program requires GNU Octave 3.8.2 and its signal package 1.3.2 (sudo yum install octave octave-signal octave-devel).
+
+Major Component Description:
+
+To run the program, use the Octave script 'run_command.m' in a Unix shell.  For example, to analyze a female voice in 'voice.wav' between t = 1200 ms and t = 2200 ms and write the results in a file named 'output', type:
+./run_command.m measure_voice_parameters1 --audio voice.wav --out output --gender F --smark 1200 --emark 2200
+To see a list of command-line options for the main Octave function 'measure_voice_parameters1.m', use the 'help' command, i.e., type:
+./run_command.m help measure_voice_parameters1
+Before running the script 'run_command.m', you need to first make it executable with 'chmod u+x'.
+A list of measurements are printed by the program to stdout.
+Expected runtime: around 10 times the audio duration
+For some derivative voice parameters such as Vowel Space Area, each individual measurement is derived from more than one utterance.  Therefore, these derivative parameters are to be measured by applying some additional routines to the results of analyzing several individual utterances.  The following Octave statements illustrate this type of measurement using the Octave functions located in the sub-folder 'multi_utterance':
+  dispersion = vowel_formant_dispersion(i_median, a_median, ...
+                                        o_median, u_median);
+  area = vowel_space_area(i_median, a_median, o_median, ...
+                          u_median);
+  area_e = vowel_space_area(i_median, a_median, e_median, ...
+                            u_median);
+  centralization = formant_centralization_ratio(i_median, ...
+                                                a_median, ...
+                                                u_median);
+Here each 'median' variable is a 4-vector for the first four formant frequencies.
+
+Detailed Set-up Instructions:
+
+Part of the program is coded in C++ and needs compiling with the 'mkoctfile' shell script, which is part of a GNU Octave installation.  Build octread_formant_frequencies5.oct by executing the following command outside or inside Octave:
+mkoctfile octread_formant_frequencies5.cc read_formant_frequencies5.cc string_to_number.cc
+
+
+-------------------------------------
+Update about the parallel processing
+-------------------------------------
+
+To run the program in parallel use the main script run.sh from Unix shell.
+For example, in order to process the whole database /nfs/transfer/cleaned run the following command
+./run.sh /nfs/transfer/cleaned
+
+All results are in partial files. They can be combined into a single file using 
+combine_outputs.sh
+
+
